@@ -41,3 +41,20 @@ $
 git remote -v
 git switch -c development
 git branch
+
+USER@DESKTOP-M1TVSAR MINGW64 /d/ETEC/11_1_30mns/etec-final-project (nona)
+$ git push -u origin nona
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 467 bytes | 467.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'nona' on GitHub by visiting:
+remote:      https://github.com/Longfou1900/Etec-Final_Project_Flutter_Laravel/pull/new/nona
+remote: 
+To https://github.com/Longfou1900/Etec-Final_Project_Flutter_Laravel.git
+ * [new branch]      nona -> nona
+branch 'nona' set up to track 'origin/nona'.
