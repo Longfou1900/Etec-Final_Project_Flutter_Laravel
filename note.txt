@@ -1,0 +1,31 @@
+
+$ php artisan serve
+$ php artisan migrate
+$ php --ini
+extension=pdo_sqlite
+extension=sqlite3
+$ php artisan migrate
+USER@DESKTOP-M1TVSAR MINGW64 /d/ETEC/11_1_30mns/etec-final-project
+$ php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].
+
+  Press Ctrl+C to stop the server
+
+  2026-05-31 00:19:53 / ................................. ~ 0.33ms
+  2026-05-31 00:19:54 /favicon.ico ...................... ~ 0.18ms
+
+
+--- if not Check this
+php -m | findstr sqlite
+
+You should see:
+pdo_sqlite
+sqlite3
+
+Then run:
+php artisan migrate
+
+
+
+
