@@ -1,3 +1,11 @@
+--create folder Middleware
+$ php artisan make:middleware Middleware
+
+--create file in folder Middleware
+$ php artisan make:middleware RoleManager
+
+--create file in folder routes
+$ php artisan install:api
 
 $ php artisan serve
 $ php artisan migrate
@@ -58,3 +66,74 @@ remote:
 To https://github.com/Longfou1900/Etec-Final_Project_Flutter_Laravel.git
  * [new branch]      nona -> nona
 branch 'nona' set up to track 'origin/nona'.
+
+USER@DESKTOP-M1TVSAR MINGW64 /d/ETEC/11_1_30mns/etec-final-project (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 676 bytes | 676.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Longfou1900/Etec-Final_Project_Flutter_Laravel.git
+   d563f93..b89758d  main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+PS D:\ETEC\11_1_30mns\etec-final-project-laravel> php artisan install:api
+./composer.json has been updated
+Running composer update laravel/sanctum
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 1 install, 0 updates, 0 removals
+  - Locking laravel/sanctum (v4.3.2)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Downloading laravel/sanctum (v4.3.2)
+  - Installing laravel/sanctum (v4.3.2): Extracting archive
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+   INFO  Discovering packages.  
+
+  laravel/pail ................................................................................................................................ DONE
+  laravel/pao ................................................................................................................................. DONE
+  laravel/sanctum ............................................................................................................................. DONE
+  laravel/tinker .............................................................................................................................. DONE
+  nesbot/carbon ............................................................................................................................... DONE
+  nunomaduro/collision ........................................................................................................................ DONE
+  nunomaduro/termwind ......................................................................................................................... DONE
+
+78 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+
+   INFO  No publishable resources for tag [laravel-assets].  
+
+No security vulnerability advisories found.
+   INFO  Published API routes file.  
+
+ One new database migration has been published. Would you like to run all pending database migrations? (yes/no) [yes]:
+ > php artisan install:api
+
+---------------------------------------
+--create user for login
+PS D:\ETEC\11_1_30mns\etec-final-project-laravel> php artisan tinker
+Psy Shell v0.12.23 (PHP 8.4.15 — cli) by Justin Hileman
+New PHP manual is available (latest: 3.0.7). Update with `doc --update-manual`
+> App\Models\User::create(['name' => 'Admin Boss', 'email' => 'admin@demo.com', 'password' => bcrypt('password'), 'role' => 'admin']);                                               
+
+= App\Models\User {#7963
+    name: "Admin Boss",
+    email: "admin@demo.com",
+    #password: "\$2y\$12\$VCdJ11v9jF3g1n0.Pa0C7ejt3rE0bN9ZqselmF111Xp5iS1GYnNHC",
+    updated_at: "2026-06-07 12:12:50",
+    created_at: "2026-06-07 12:12:50",
+    id: 1,
+  }
+
+
+
